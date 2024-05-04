@@ -80,7 +80,7 @@ public class Solution {
             if (dict.ContainsKey(value))
                 return new int[] { dict[value], i };
 
-            dict.Add(nums[i], i);
+            dict.TryAdd(nums[i], i);
             
         }
         throw new Exception("Error on input");
